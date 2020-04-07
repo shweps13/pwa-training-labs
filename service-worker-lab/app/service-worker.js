@@ -10,3 +10,7 @@ self.addEventListener('activate', event => {
 });
 
 // test test
+
+self.addEventListener('fetch', event => {
+    console.log('Fetching:', event.request.url);
+});
